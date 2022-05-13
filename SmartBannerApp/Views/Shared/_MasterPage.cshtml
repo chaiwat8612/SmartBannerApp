@@ -7,8 +7,11 @@
 
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/lib/smartbanner/banner_style.css" rel="stylesheet" />
+
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+
 </head>
 <body>
 
@@ -36,9 +39,24 @@
     </div>
 
     <footer id="footer">
-        @{ 
+        @{
             <partial name="_FooterPage" />
         }
     </footer>
+
+    <div class="smartbanner" id="smartabanner">
+        <div class="smartbanner-container">
+            <a href="#" id="smb-close" class="smartbanner-close">&times;</a>
+            <span class="smartbanner-icon"></span>
+            <div class="smartbanner-info">
+                <div class="smartbanner-title">UMay+ Mobile Application</div>
+                <div>สะดวก ปลอดภัย ครบทุกฟังก์ชันการใช้งาน</div>
+                @*<span>Free &ndash; Google Play</span>*@
+            </div>
+            <a href="https://play.google.com/store/apps/details?id=com.aim.android.umay" target="_blank" class="smartbanner-button">
+                <span class="smartbanner-button-text">Open ></span>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
